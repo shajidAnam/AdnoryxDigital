@@ -1,6 +1,7 @@
 ﻿const navToggle = document.querySelector('.nav-toggle');
 const primaryNav = document.querySelector('#primary-nav');
 const navLinks = document.querySelectorAll('#primary-nav a');
+const siteHeader = document.querySelector('.site-header');
 
 if (navToggle && primaryNav) {
   navToggle.addEventListener('click', () => {
@@ -15,6 +16,15 @@ if (navToggle && primaryNav) {
       primaryNav.classList.remove('is-open');
     });
   });
+}
+
+if (siteHeader) {
+  const updateHeaderState = () => {
+    siteHeader.classList.toggle('is-scrolled', window.scrollY > 12);
+  };
+
+  updateHeaderState();
+  window.addEventListener('scroll', updateHeaderState, { passive: true });
 }
 
 const yearEl = document.querySelector('#year');
@@ -36,7 +46,11 @@ if ('IntersectionObserver' in window) {
     { threshold: 0.12 }
   );
 
-  reveals.forEach((el) => observer.observe(el));
+  reveals.forEach((el, index) => {
+    const delay = (index % 6) * 70;
+    el.style.setProperty('--delay', `${delay}ms`);
+    observer.observe(el);
+  });
 } else {
   reveals.forEach((el) => el.classList.add('is-visible'));
 }

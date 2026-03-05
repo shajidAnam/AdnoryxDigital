@@ -1,0 +1,98 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Coming Soon | Adnoryx Digital</title>
+  <meta name="description" content="This Adnoryx Digital service is currently in progress. Join the waitlist for updates and early access." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <link rel="canonical" href="https://shajidanam.github.io/AdnoryxDigital/coming-soon.html" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#coming-main">Skip to main content</a>
+
+  <div class="topbar" aria-label="Contact quick links">
+    <div class="container topbar-wrap">
+      <a href="mailto:mdanamulshajid@gmail.com">mdanamulshajid@gmail.com</a>
+      <a href="tel:+8801680861295">+8801680861295</a>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html" aria-label="Adnoryx Digital home">
+        <img src="assets/adnoryx-logo.png" width="140" height="44" alt="Adnoryx Digital logo" />
+        <span class="logo-text">Adnoryx Digital</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html#services">Services</a>
+        <a href="meta-ads.html">Meta Ads</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="index.html#contact" class="btn btn-small">Book a Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="coming-main" class="subpage-main">
+    <section class="section">
+      <div class="container coming-wrap reveal">
+        <p class="eyebrow">Upcoming Service</p>
+        <h1 id="service-name">This service is coming soon.</h1>
+        <p class="hero-text">We are currently building this service with a proper framework, process, and reporting structure. You can join the waitlist now and get notified when it launches.</p>
+
+        <div class="detail-grid">
+          <article class="card reveal">
+            <h3>What to expect</h3>
+            <ul class="check-list">
+              <li>Professional onboarding workflow</li>
+              <li>Performance-focused campaign structure</li>
+              <li>Transparent weekly reporting</li>
+              <li>Clear pricing and package options</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3>Join waitlist</h3>
+            <p>Share your interest and business category. We will contact you first when this service opens.</p>
+            <div class="cta-group">
+              <a href="index.html#contact" class="btn">Join the Waitlist</a>
+              <a href="https://wa.me/8801680861295" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp Now</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; <span id="year"></span> Adnoryx Digital. All rights reserved.</p>
+      <a href="index.html" class="back-to-top">Back to Home</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const service = params.get('service');
+    if (service) {
+      const clean = service.trim();
+      document.title = `${clean} | Coming Soon | Adnoryx Digital`;
+      const h1 = document.getElementById('service-name');
+      if (h1) {
+        h1.textContent = `${clean} service is coming soon.`;
+      }
+    }
+  </script>
+</body>
+</html>
