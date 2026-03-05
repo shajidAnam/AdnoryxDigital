@@ -1,4 +1,4 @@
 ﻿User-agent: *
 Allow: /
 
-Sitemap: https://your-username.github.io/adnoryx-digital/sitemap.xml
+Sitemap: https://shajidanam.github.io/AdnoryxDigital/sitemap.xml

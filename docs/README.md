@@ -1,147 +1,59 @@
 ﻿# Adnoryx Digital Website
 
-Professional, mobile-first, high-converting static website for **Adnoryx Digital**.
+Single-source static website for **Adnoryx Digital**.
 
-## Stack
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- No backend required (GitHub Pages ready)
+## Source Folder
+All website files are in:
+- `docs/`
 
-## Project Structure
-```text
-adnoryx-digital/
-  assets/
-    favicon.svg
-    founder-placeholder.svg
-    og-image.svg
-  index.html
-  styles.css
-  script.js
-  robots.txt
-  sitemap.xml
-  site.webmanifest
-  README.md
-```
+GitHub Pages is configured to publish from:
+- Branch: `main`
+- Folder: `/docs`
 
-## 1) Run Locally (Beginner Friendly)
+Live URL:
+- `https://shajidanam.github.io/AdnoryxDigital/`
+
+## Run Locally
 1. Open terminal in VS Code.
 2. Run:
    ```powershell
-   cd d:\AdNoryxDigital\adnoryx-digital
+   cd d:\AdNoryxDigital\docs
    py -m http.server 5500
    ```
-3. Open browser: `http://localhost:5500`
-4. Stop local server anytime with `Ctrl + C`.
+3. Open: `http://localhost:5500`
+4. Stop with `Ctrl + C`.
 
-## 2) Edit Text, Images, and Links
-### Main content
-- File: `index.html`
-- Update business text section-by-section using IDs:
-  - Hero: `#home`
-  - Services: `#services`
-  - Process: `#process`
-  - Case studies: `#case-studies`
-  - Pricing: `#pricing`
-  - About: `#about`
-  - FAQ: `#faq`
-  - Contact: `#contact`
-
-### Founder photo
-- Replace: `assets/founder-placeholder.svg`
-- Or update this line in `index.html` to your new image path:
-  ```html
-  <img src="assets/founder-placeholder.svg" ...>
-  ```
-
-### Branding (colors/fonts)
-- File: `styles.css`
-- Update CSS variables in `:root`:
-  - `--bg`, `--bg-soft` (dark base)
-  - `--accent`, `--accent-2` (brand accents)
-- Fonts used:
-  - Headings: `Space Grotesk`
-  - Body: `Manrope`
-
-### CTA links
-- Update WhatsApp links in `index.html`:
-  - Find: `https://wa.me/8801680861295`
-- Update email:
-  - Find: `mdanamulshajid@gmail.com`
-
-## 3) Connect Contact Form (Formspree)
-1. Create free account at https://formspree.io
-2. Create a new form and copy your form endpoint.
-3. Open `index.html`, find:
-   ```html
-   action="https://formspree.io/f/your-form-id"
-   ```
-4. Replace `your-form-id` with your actual ID.
-5. Commit and push changes.
-
-## 4) Add Analytics (Meta Pixel + Google Analytics)
-- In `index.html`, analytics placeholders are already added as comments in `<head>`.
-- Search for:
-  - `Meta Pixel placeholder`
-  - `Google Analytics placeholder`
-- Uncomment blocks and replace IDs.
-
-## 5) Basic SEO Setup (Important)
-Before going live, update these values in `index.html`:
-- `canonical` URL
-- `og:url`
-- `og:image`
-- Twitter image URL
-
-Also update:
-- `sitemap.xml` -> `<loc>` URL
-- `robots.txt` -> sitemap URL
-- `site.webmanifest` -> `start_url` if repo name/path changes
-
-## 6) Deploy to GitHub Pages (Exact Steps)
-### A. Push this website to a GitHub repo
-Run these commands from `d:\AdNoryxDigital\adnoryx-digital`:
+If `py` does not work:
 ```powershell
-cd d:\AdNoryxDigital\adnoryx-digital
-git init
-git add .
-git commit -m "Initial Adnoryx Digital website"
-git branch -M main
-git remote add origin https://github.com/<your-username>/adnoryx-digital.git
-git push -u origin main
+python -m http.server 5500
 ```
 
-### B. Enable GitHub Pages
-1. Open your GitHub repo.
-2. Go to `Settings` -> `Pages`.
-3. Under `Build and deployment`:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/(root)`
-4. Click `Save`.
-5. Wait 1-3 minutes.
+## Edit Website
+- Main content: `docs/index.html`
+- Styling/theme: `docs/styles.css`
+- Interactions: `docs/script.js`
+- SEO files:
+  - `docs/robots.txt`
+  - `docs/sitemap.xml`
+  - `docs/site.webmanifest`
+- Assets: `docs/assets/`
 
-Your live URL will be:
-`https://<your-username>.github.io/adnoryx-digital/`
+## Contact Info (Current)
+- Email: `mdanamulshajid@gmail.com`
+- Phone: `+8801680861295`
+- WhatsApp: `https://wa.me/8801680861295`
 
-## 7) After Deployment Checklist
-- Test on mobile and desktop.
-- Test all CTA buttons.
-- Submit test form.
-- Replace placeholder testimonials/case studies with real proof.
-- Replace social profile links with your real pages.
+## Formspree Setup
+1. Create a form at https://formspree.io
+2. Replace in `docs/index.html`:
+   - `action="https://formspree.io/f/your-form-id"`
 
-## Brand Kit Placeholder
-- Agency: **Adnoryx Digital**
-- Founder: **Md Anamul Shajid**
-- Color direction:
-  - Deep Navy: `#07121f`
-  - Slate Blue: `#0d1f34`
-  - Teal Accent: `#2dd4bf`
-  - Sky Accent: `#38bdf8`
-- Tone: confident, clear, practical, professional.
-
-## Notes
-- Fully static site, suitable for free hosting on GitHub Pages.
-- Form works without backend via Formspree.
-- SEO starter files included (`robots.txt`, `sitemap.xml`, OG tags, manifest, favicon placeholder).
+## Deploy Changes
+From repo root:
+```powershell
+cd d:\AdNoryxDigital
+git add .
+git commit -m "Update website"
+git push origin main
+```
+GitHub Pages will serve the latest `docs/` content.
