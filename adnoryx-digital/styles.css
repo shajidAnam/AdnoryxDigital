@@ -149,15 +149,14 @@ ol {
   font-size: 1rem;
 }
 
-.logo-mark {
-  display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  color: #03222d;
-  font-size: 0.76rem;
+.logo img {
+  width: auto;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 0.4rem;
+}
+
+.logo-text {
   font-weight: 800;
 }
 

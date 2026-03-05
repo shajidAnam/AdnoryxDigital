@@ -65,9 +65,9 @@ adnoryx-digital/
 
 ### CTA links
 - Update WhatsApp links in `index.html`:
-  - Find: `https://wa.me/8801000000000`
+  - Find: `https://wa.me/8801680861295`
 - Update email:
-  - Find: `hello@adnoryxdigital.com`
+  - Find: `mdanamulshajid@gmail.com`
 
 ## 3) Connect Contact Form (Formspree)
 1. Create free account at https://formspree.io
