@@ -1,0 +1,16 @@
+﻿{
+  "name": "Adnoryx Digital",
+  "short_name": "Adnoryx",
+  "description": "Meta Ads agency website for lead generation and client acquisition.",
+  "start_url": "/adnoryx-digital/",
+  "display": "standalone",
+  "background_color": "#07121f",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
