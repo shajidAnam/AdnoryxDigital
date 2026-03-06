@@ -796,8 +796,35 @@ main > .section:nth-of-type(even) {
   font-size: 0.9rem;
 }
 
+.footer-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.95rem;
+}
+
 .back-to-top {
   color: #d9d9d9;
+}
+
+.policy-wrap {
+  max-width: 980px;
+  margin-inline: auto;
+}
+
+.policy-meta {
+  color: var(--muted);
+  margin-top: 0.6rem;
+  font-size: 0.92rem;
+}
+
+.policy-stack {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.policy-stack .card h3 {
+  margin-bottom: 0.55rem;
 }
 
 .reveal {
@@ -924,6 +951,11 @@ main > .section:nth-of-type(even) {
 
   .logo-text {
     display: none;
+  }
+
+  .footer-wrap {
+    flex-direction: column;
+    text-align: center;
   }
 }
 

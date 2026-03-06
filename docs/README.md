@@ -50,6 +50,29 @@ python -m http.server 5500
 2. Replace in `docs/index.html`:
    - `action="https://formspree.io/f/your-form-id"`
 
+## SEO Setup (Important for Google Ranking)
+This site is already prepared with:
+- Page titles + meta descriptions
+- Canonical URLs
+- Open Graph + Twitter tags
+- Structured data (Schema.org)
+- `robots.txt` + `sitemap.xml`
+
+After launch, complete this checklist:
+1. Create/verify your property in Google Search Console.
+2. Submit sitemap:
+   - `https://shajidanam.github.io/AdnoryxDigital/sitemap.xml`
+3. Request indexing for:
+   - Home page
+   - Meta Ads page
+   - Privacy Policy page
+4. Connect a real domain (recommended for stronger branding/SEO than a github.io subdomain).
+5. Replace placeholder social links with real brand profiles.
+6. Replace testimonial/case placeholders with real proof and results.
+7. Publish 2-4 keyword-focused service/blog pages over time for better long-term ranking.
+
+Note: No one can guarantee instant rank #1. Ranking improves with technical SEO + quality content + backlinks + time.
+
 ## Deploy Changes
 From repo root:
 ```powershell
