@@ -31,6 +31,7 @@ python -m http.server 5500
 ## Edit Website
 - Main content: `docs/index.html`
 - Meta Ads service page: `docs/meta-ads.html`
+- Blog page: `docs/blog.html`
 - Coming soon service page template: `docs/coming-soon.html`
 - Styling/theme: `docs/styles.css`
 - Interactions: `docs/script.js`
